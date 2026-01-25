@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<ScrollPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+            fx:controller="agh.ics.oop.presenter.ConfigPresenter" fitToWidth="true">
+    <VBox spacing="15" alignment="CENTER" style="-fx-padding: 25;">
+        <Label text="Simulation Settings" style="-fx-font-size: 20; -fx-font-weight: bold;"/>
+        <GridPane hgap="12" vgap="12" alignment="CENTER">
+            <Label text="Map Width:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+            <TextField fx:id="widthField" text="30" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+            <Label text="Map Height:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+            <TextField fx:id="heightField" text="30" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+            <Label text="Start Plants:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+            <TextField fx:id="startPlantsField" text="40" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+            <Label text="Plant Energy:" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+            <TextField fx:id="plantEnergyField" text="20" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+
+            <Label text="Plants Per Day:" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+            <TextField fx:id="plantsPerDayField" text="10" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+
+            <Label text="Start Animals:" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+            <TextField fx:id="startAnimalsField" text="20" GridPane.rowIndex="5" GridPane.columnIndex="1"/>
+
+            <Label text="Start Energy:" GridPane.rowIndex="6" GridPane.columnIndex="0"/>
+            <TextField fx:id="startEnergyField" text="50" GridPane.rowIndex="6" GridPane.columnIndex="1"/>
+
+            <Label text="Daily Energy Loss:" GridPane.rowIndex="7" GridPane.columnIndex="0"/>
+            <TextField fx:id="dailyLossField" text="1" GridPane.rowIndex="7" GridPane.columnIndex="1"/>
+
+            <Label text="Reproduction Energy:" GridPane.rowIndex="8" GridPane.columnIndex="0"/>
+            <TextField fx:id="readyEnergyField" text="30" GridPane.rowIndex="8" GridPane.columnIndex="1"/>
+
+            <Label text="Offspring Energy Cost:" GridPane.rowIndex="9" GridPane.columnIndex="0"/>
+            <TextField fx:id="breedLossField" text="15" GridPane.rowIndex="9" GridPane.columnIndex="1"/>
+
+            <Label text="Min Mutations:" GridPane.rowIndex="10" GridPane.columnIndex="0"/>
+            <TextField fx:id="minMutField" text="0" GridPane.rowIndex="10" GridPane.columnIndex="1"/>
+
+            <Label text="Max Mutations:" GridPane.rowIndex="11" GridPane.columnIndex="0"/>
+            <TextField fx:id="maxMutField" text="3" GridPane.rowIndex="11" GridPane.columnIndex="1"/>
+
+            <Label text="Genome Length:" GridPane.rowIndex="12" GridPane.columnIndex="0"/>
+            <TextField fx:id="genomeLenField" text="10" GridPane.rowIndex="12" GridPane.columnIndex="1"/>
+
+            <Label text="Start Parasites:" GridPane.rowIndex="13" GridPane.columnIndex="0"/>
+            <TextField fx:id="startParasitesField" text="10" GridPane.rowIndex="13" GridPane.columnIndex="1"/>
+
+            <Label text="Host Extra Energy Loss:" GridPane.rowIndex="14" GridPane.columnIndex="0"/>
+            <TextField fx:id="hostExtraLossField" text="2" GridPane.rowIndex="14" GridPane.columnIndex="1"/>
+
+            <Label text="Parasite Panic Energy Loss:" GridPane.rowIndex="15" GridPane.columnIndex="0"/>
+            <TextField fx:id="panicLossField" text="3" GridPane.rowIndex="15" GridPane.columnIndex="1"/>
+        </GridPane>
+        <Button text="Start Simulation" onAction="#onStartClick" prefWidth="220"/>
+    </VBox>
+</ScrollPane>
